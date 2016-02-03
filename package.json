@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint",
+    "lint": "eslint . --ext .js --ext .jsx"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,16 @@
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-core": "^6.4.0",
+    "babel-eslint": "^4.1.8",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-loader": "^1.2.1",
+    "eslint-plugin-react": "^3.16.1",
+    "jscs": "^2.9.0",
+    "jscs-loader": "^0.2.0",
+    "sinet-coding-conventions": "^1.31.6",
     "webpack": "^1.12.11",
     "webpack-dev-server": "^1.14.1"
   }
